@@ -1,0 +1,12 @@
+C:\Projects\scriptingToFramework\Royale\bin\Debug\net6.0\Royale.deps.json
+C:\Projects\scriptingToFramework\Royale\bin\Debug\net6.0\Royale.dll
+C:\Projects\scriptingToFramework\Royale\bin\Debug\net6.0\Royale.pdb
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\Royale.csproj.AssemblyReference.cache
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\Royale.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\Royale.AssemblyInfoInputs.cache
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\Royale.AssemblyInfo.cs
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\Royale.csproj.CoreCompileInputs.cache
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\Royale.dll
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\refint\Royale.dll
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\Royale.pdb
+C:\Projects\scriptingToFramework\Royale\obj\Debug\net6.0\ref\Royale.dll
