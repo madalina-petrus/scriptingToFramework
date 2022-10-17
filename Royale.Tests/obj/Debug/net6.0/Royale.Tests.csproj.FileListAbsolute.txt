@@ -97,3 +97,5 @@ C:\Projects\scriptingToFramework\Royale.Tests\obj\Debug\net6.0\refint\Royale.Tes
 C:\Projects\scriptingToFramework\Royale.Tests\obj\Debug\net6.0\Royale.Tests.pdb
 C:\Projects\scriptingToFramework\Royale.Tests\obj\Debug\net6.0\Royale.Tests.genruntimeconfig.cache
 C:\Projects\scriptingToFramework\Royale.Tests\obj\Debug\net6.0\ref\Royale.Tests.dll
+C:\Projects\scriptingToFramework\Royale.Tests\bin\Debug\net6.0\WebDriver.Support.dll
+C:\Projects\scriptingToFramework\Royale.Tests\bin\Debug\net6.0\WebDriver.dll
