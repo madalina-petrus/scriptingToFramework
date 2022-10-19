@@ -405,6 +405,33 @@
             "related": ".xml"
           }
         }
+      },
+      "Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Selenium.Support": "4.5.1",
+          "Selenium.WebDriver": "4.5.1"
+        },
+        "compile": {
+          "bin/placeholder/Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Framework.dll": {}
+        }
+      },
+      "Royale/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Royale.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Royale.dll": {}
+        }
       }
     }
   },
@@ -1343,6 +1370,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Framework/1.0.0": {
+      "type": "project",
+      "path": "../Framework/Framework.csproj",
+      "msbuildProject": "../Framework/Framework.csproj"
+    },
+    "Royale/1.0.0": {
+      "type": "project",
+      "path": "../Royale/Royale.csproj",
+      "msbuildProject": "../Royale/Royale.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1351,8 +1388,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
-      "Selenium.Support >= 4.5.1",
-      "Selenium.WebDriver >= 4.5.1",
+      "Royale >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -1363,11 +1399,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
+      "projectUniqueName": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
       "projectName": "Royale.Tests",
-      "projectPath": "c:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
+      "projectPath": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
       "packagesPath": "C:\\Users\\madalinapetrus\\.nuget\\packages\\",
-      "outputPath": "c:\\Projects\\scriptingToFramework\\Royale.Tests\\obj\\",
+      "outputPath": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1388,7 +1424,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\scriptingToFramework\\Royale\\Royale.csproj": {
+              "projectPath": "C:\\Projects\\scriptingToFramework\\Royale\\Royale.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1416,14 +1456,6 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[4.2.1, )"
-          },
-          "Selenium.Support": {
-            "target": "Package",
-            "version": "[4.5.1, )"
-          },
-          "Selenium.WebDriver": {
-            "target": "Package",
-            "version": "[4.5.1, )"
           },
           "coverlet.collector": {
             "target": "Package",

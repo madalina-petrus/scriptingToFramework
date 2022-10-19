@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "McYjDVd5WaGlWY3VUw6O9oBRbjyWs/ix8uhmIB2brHsJBFrpJBUBqnqrUycecsGEedwHdLGQIQviU2eDVeKF2w==",
+  "dgSpecHash": "zK2hYqwHGhXvkwVubx6VEcALdkWs603QsR6Zbv2M5t0HviwPnNt5kTfNgwdJRdzJcIqByssfj5k/MkRmP5TyNg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\scriptingToFramework\\Framework\\Framework.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\madalinapetrus\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\madalinapetrus\\.nuget\\packages\\selenium.support\\4.5.1\\selenium.support.4.5.1.nupkg.sha512",
+    "C:\\Users\\madalinapetrus\\.nuget\\packages\\selenium.webdriver\\4.5.1\\selenium.webdriver.4.5.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -4,14 +4,14 @@
     "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj": {
+    "C:\\Projects\\scriptingToFramework\\Framework\\Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
-        "projectName": "Royale.Tests",
-        "projectPath": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
+        "projectUniqueName": "C:\\Projects\\scriptingToFramework\\Framework\\Framework.csproj",
+        "projectName": "Framework",
+        "projectPath": "C:\\Projects\\scriptingToFramework\\Framework\\Framework.csproj",
         "packagesPath": "C:\\Users\\madalinapetrus\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\obj\\",
+        "outputPath": "C:\\Projects\\scriptingToFramework\\Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,80 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
+        "projectName": "Royale.Tests",
+        "projectPath": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\Royale.Tests.csproj",
+        "packagesPath": "C:\\Users\\madalinapetrus\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\scriptingToFramework\\Royale.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\madalinapetrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\scriptingToFramework\\Royale\\Royale.csproj": {
+                "projectPath": "C:\\Projects\\scriptingToFramework\\Royale\\Royale.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
@@ -61,19 +135,75 @@
               "target": "Package",
               "version": "[4.2.1, )"
             },
-            "Selenium.Support": {
-              "target": "Package",
-              "version": "[4.5.1, )"
-            },
-            "Selenium.WebDriver": {
-              "target": "Package",
-              "version": "[4.5.1, )"
-            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.1.2, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\scriptingToFramework\\Royale\\Royale.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\scriptingToFramework\\Royale\\Royale.csproj",
+        "projectName": "Royale",
+        "projectPath": "C:\\Projects\\scriptingToFramework\\Royale\\Royale.csproj",
+        "packagesPath": "C:\\Users\\madalinapetrus\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\scriptingToFramework\\Royale\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\madalinapetrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\scriptingToFramework\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\Projects\\scriptingToFramework\\Framework\\Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
