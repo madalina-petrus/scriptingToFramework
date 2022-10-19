@@ -8,12 +8,9 @@ namespace Royale.Pages
 
         public PageBase(IWebDriver driver)
         {
-            Header=new Header(driver);
+            Header = new Header(driver);
         }
 
-
     }
-
-
 
 }
