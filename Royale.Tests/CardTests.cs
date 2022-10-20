@@ -1,3 +1,5 @@
+using Framework.Models;
+using Framework.Services;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Royale.Pages;
@@ -46,5 +48,25 @@ public class CardTests
         Assert.AreEqual("Troop", type);
         Assert.AreEqual("Arena 8", arena);
         Assert.AreEqual("Common", cardRarity);
+    }
+
+    static string[] cardNames={"Ice Spirit","Mirror"};
+
+    [Test,Category("cards")]
+    [TestCaseSource("cardNames")]
+    [Parallelizable(ParallelScope.Children)]
+    public void CardDetailPageIsCorrect(string cardName)
+    {
+        driver.Manage().Window.Maximize();
+        new CardsPage(driver).GoTo().GetCardByName(cardName).Click();
+        var cardDetails = new CardDetailsPage(driver);
+
+        var cardOnPage=cardDetails.GetBaseCard();
+        var card=new InMemoryCardService().GetCardByName(cardName);
+
+        Assert.AreEqual(card.Name, cardOnPage.Name);
+        Assert.AreEqual(card.Type, cardOnPage.Type);
+        Assert.AreEqual(card.Arena, cardOnPage.Arena);
+        Assert.AreEqual(card.Rarity, cardOnPage.Rarity);
     }
 }

@@ -1,3 +1,4 @@
+using Framework.Models;
 using OpenQA.Selenium;
 
 namespace Royale.Pages
@@ -14,6 +15,19 @@ namespace Royale.Pages
         {
             var types = Map.CardTypes.Text.Split(",");
             return (types[0].Trim(), types[1].Trim());
+        }
+
+        public Card GetBaseCard()
+        {
+            var(category,arena)=GetCardType();
+
+            return new Card
+            {
+                Name=Map.CardName.Text,
+                Rarity=Map.CardRarity.Text.Split('\n').Last(),
+                Type=category,
+                Arena=arena
+            };
         }
 
     }
